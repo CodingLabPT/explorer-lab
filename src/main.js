@@ -8,9 +8,9 @@ const ccBg = document.querySelector(".cc")
 
 function setCardType(type) {
   const colors = {
-    visa: ["#436D99", "#2D57F2", "#084B8A"],
-    mastercard: ["#DF6F29", "#FFBF00", "#B45F04"],
-    maestro: ["#500061", "#991999", "#500061"],
+    visa: ["#D8BFD8", "#DDA0DD", "#DA70D6"],
+    mastercard: ["#800000", "#DA70D6", "#FA8072"],
+    maestro: ["#ADFF2F", "#ADFF2F", "#666600"],
     default: ["black", "gray", "gray"],
   }
 
@@ -129,5 +129,5 @@ ExpirationDateMasked.on("accept", () => {
 
 function UpdateExpirationDate(date) {
   const ccExpiration = document.querySelector(".cc-extra .value")
-  ccExpiration.innerText = date.length === 0 ? "02/32" : date
+  ccExpiration.innerText = date.length === 0 ? "MM/AA" : date
 }
